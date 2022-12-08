@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
 	"name": "@implicitcast/npm-versioning-action",
+	"version": "1.0.1",
 	"description": "github action that generates versioning string base on the npm version value, branch name and commit number",
 	"main": "dist/index.js",
 	"scripts": {

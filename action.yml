@@ -1,4 +1,4 @@
-name: "npm-versioning-action"
+name: "@scudderk/npm-versioning-action"
 branding:
   icon: "check-circle"
   color: "green"
@@ -17,6 +17,8 @@ inputs:
 outputs:
   version:
     description: "versioning information generated"
+  version-number:
+    description: "versioning information generated without branch name and commit count"
   tag:
     description: "latest for release branch, beta for other branches"
 runs:

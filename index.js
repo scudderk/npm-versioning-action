@@ -63,6 +63,7 @@ async function main() {
     }
     console.log(`versioning name: ${versioningName}, tag: ${tag}`);
     core.setOutput("version", versioningName);
+    core.setOutput('version-number', `${packageJson.version}`)
     core.setOutput("tag", tag);
     await fs.writeFile(packageJsonPath, JSON.stringify(packageJson, null, 2));
   } catch (error) {
